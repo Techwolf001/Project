@@ -12,16 +12,16 @@ else if(userAgent.match(/firefox|fxios/i)){
 }else if(userAgent.match(/safari/i)){
     browser = 'safari';
 }else{
-    alert('Other browser')
+    alert('Other browser');
 }
 
 const logo = document.querySelector(`.logos .${browser}`);
 if(logo != ""){
     logo.style.opacity = "1";
     logo.style.transform = "rotateZ(360deg)";
+    logo.style.boxshadow = "inset 2px 2px 5px #fff";
 }
 
-console.log(navigator.appName)
 
 function userSystemOsVersion(){
     let os = navigator.appVersion;
@@ -29,27 +29,27 @@ function userSystemOsVersion(){
 }
 function userSystemOs(){
     let OsName = "Unknown OS";
-    let operartingSystem;
-    if(navigator.appVersion.indexOf('Win') != -1)  {
+    let operatingSystem;
+    if(navigator.appVersion.indexOf.match('Win') != -1)  {
         OsName = "Windows";
-        operartingSystem = 'Window';
+        operatingSystem = 'Window';
     }
-    else if(navigator.appVersion.indexOf('Mac') != -1)  {
+    else if(navigator.appVersion.indexOf.match('Mac') != -1)  {
         OsName = "MacOS";
-        operartingSystem = 'MacOS';
+        operatingSystem = 'MacOS';
     }
-    else if(navigator.appVersion.indexOf('X11') != -1)  {
+    else if(navigator.appVersion.indexOf.match('X11') != -1)  {
         OsName = "UNIX";
-        operartingSystem = 'UNIX';
+        operatingSystem = 'UNIX';
     }
-    else if(navigator.appVersion.indexOf('Linux') != -1)  {
+    else if(navigator.appVersion.indexOf.match('Linux') != -1)  {
         OsName = "LINUX";
-        operartingSystem = 'LINUX';
+        operatingSystem = 'LINUX';
     }
     else{
         alert ('Other Operating System');
     }
-    const osname = document.querySelector(`.OS .${operartingSystem}`);
+    const osname = document.querySelector(`.OS .${operatingSystem}`);
     if (osname != "") {
         osname.style.opacity = "1";
     }
