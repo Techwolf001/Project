@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="ggg">
         <h2>Browser</h2>
         <div class="logos">
@@ -17,10 +18,22 @@
             <img src="image/safari.png" alt="safari" class="safari">
         </div>
     </div>
+    <div class="OS">
+        <h2>Operating Systems</h2><br/>
+        <div class="OSLogo">
+            <img src="image/Windows.png" alt="Windows" class="Windows">
+            <img src="image/linux.png" alt="linux" class="linux">
+            <img src="image/unix.png" alt="unix" class="unix">
+            <img src="image/MacOs.png" alt="MacOs" class="MacOs">
+        </div>
+    </div>
+    <div class="btn1">
+        <button onclick="userSystemOsVersion()">Shows system OS version</button>
+        <p id="OS"></p>
+    </div>
     <button onclick="userBrowser()">Shows user Browser</button>
     <p id="Browser"></p>
-    <button onclick="userSystemOsVersion()">Shows system OS version</button>
-    <p id="OS"></p>
+    
     <button onclick="userSystemOs()">Shows system OS</button>
     <p id="OsName"></p>
     <script src="index.js"></script>
