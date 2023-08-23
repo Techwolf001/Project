@@ -1,3 +1,36 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, blue, grey);
+    align-items: center;
+    min-height: 100vh;
+
+}
+.ggg{
+    display: flex;
+    background: #fff;
+    padding-left: 30px 40px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    width: 515px;
+    margin: 0 auto;
+}
+.ggg h2{
+    color: blue;
+    font-size: 45px;
+}
+.ggg .logos{
+    margin-left: 15px;
+}
+
+.logos img{
+    width: 40px;
+    height: 40px;
+    margin: 0 7px;
+    opacity: .3;
+    transition: opacity .5s ease;
 }

@@ -1,20 +1,24 @@
 let userAgent = navigator.userAgent;
 let browser;
 if(userAgent.match(/edg/i)){
-    browser = 'edge';
+    browser = 'Microsoft edge';
 }
 else if(userAgent.match(/firefox|fxios/i)){
-    browser = 'firefox';
+    browser = 'Mozzila Firefox';
 }else if(userAgent.match(/opr/i)){
-    browser = 'opera mini';
+    browser = 'Opera mini';
 }else if(userAgent.match(/chrome|chromium|crios/i)){
-    browser = 'chrome';
+    browser = 'Google Chrome';
 }else if(userAgent.match(/safari/i)){
-    browser = 'safari';
+    browser = 'Apple Safari';
 }else{
     alert('Other browser')
 }
-console.log(browser);
+const logo = document.querySelector(`.logos .${browser}`);
+if(logo != ""){
+    logo.style.opacity = "1";
+}
+
 function userSystemOsVersion(){
     let os = navigator.appVersion;
     document.getElementById('OS').innerHTML=os;
