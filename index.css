@@ -12,11 +12,11 @@ body{
 .ggg{
     display: flex;
     background: #fff;
-    padding-left: 30px 40px;
+    padding: 30px 40px;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 15px;
     justify-content: center;
-    width: 515px;
+    width: 600px;
     margin: 0 auto;
     margin-top: 30px;
 
@@ -38,11 +38,11 @@ body{
 }
 .OS{
     background: #fff;
-    padding-left: 30px 40px;
+    padding: 30px 40px;
     align-items: center;
     border-radius: 5px;
     justify-content: center;
-    width: 515px;
+    width: 530px;
     margin: 0 auto;
     margin-top: 30px;
 
