@@ -22,7 +22,24 @@ if(logo != ""){
     logo.style.boxshadow = "inset 2px 2px 5px #fff";
 }
 
+let osDetailsRef = document.getElementById('os-details');
 
+var os = [
+    {name:'Android', value:'Android'},
+    {name:'iPhone', value:'iPhone'},
+    {name:'iPad', value:'Mac'},
+    {name:'Macintosh', value:'Mac'},
+    {name:'Linux', value:'Linux'},
+    {name:'Windows', value:'Windows'},
+]
+
+for (let i in os){
+    if (userAgent.includes(os[i].value)){
+        osDetailsRef.innerHTML = os[i].name;
+        break;
+    }
+}
+/*
 function userSystemOsVersion(){
     let os = navigator.appVersion;
     document.getElementById('OS').innerHTML=os;
@@ -53,4 +70,4 @@ function userSystemOs(){
     if (osname != "") {
         osname.style.opacity = "1";
     }
-}
+}*/

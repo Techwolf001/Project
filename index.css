@@ -47,7 +47,7 @@ body{
 }
 .ggg{
     display: flex;
-    background: transparent;
+    background: beige;
     backdrop-filter: blur (50px);
     padding: 30px 40px;
     align-items: center;
@@ -76,8 +76,8 @@ body{
     transition: 2.5s ease;
 }
 .OS{
-    background: transparent;
-    backdrop-filter: blur (50px);
+    background: beige;
+    
     padding: 30px 40px;
     align-items: center;
     border-radius: 5px;
@@ -115,6 +115,9 @@ body{
     border-radius: 10px;
     cursor: pointer;  
     z-index: 8;  
+    justify-content: center;
+    align-items: center;
+    left: 110px;
 }
 .btn1 button:hover{
     opacity: .8;
@@ -123,12 +126,15 @@ body{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 600px;
+    left: 190px;
     margin-top: 20px;
+    color: white;
+    transition: 2s ease-in;
 }
 div.main{
     visibility: visible;
     position: absolute;
     bottom: 30%;
     left: 30%;
+    margin-top: 30px;
 }
